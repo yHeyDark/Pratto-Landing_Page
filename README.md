@@ -28,11 +28,11 @@ Landing page desenvolvida para praticar e demonstrar habilidades em **Front-End*
 
 ---
 
-## 🖼️ Link do Projeto
+## 🌐 Link do Projeto
 
-![Preview](https://yheydark.github.io/Pratto-Landing_Page/)
+https://yheydark.github.io/Pratto-Landing_Page/
 
-> 🟨 **Observação:** Adicione um print da sua página salva como `preview.png` dentro da pasta `/images`.
+
 
 ---
 
