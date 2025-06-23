@@ -28,13 +28,20 @@ Landing page desenvolvida para praticar e demonstrar habilidades em **Front-End*
 
 ---
 
-## 🖼️ Preview do Projeto
+## 🖼️ Link do Projeto
 
-![Preview](./images/preview.png)
+![Preview](https://yheydark.github.io/Pratto-Landing_Page/)
 
 > 🟨 **Observação:** Adicione um print da sua página salva como `preview.png` dentro da pasta `/images`.
 
 ---
 
 ## 📂 Estrutura de Arquivos
-
+index.html
+css/style.css
+js/script.js
+images/
+chef.png
+prato-fritura.png
+prato-principal.png
+prato-salada.png
