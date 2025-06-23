@@ -1,0 +1,109 @@
+/* ARQUITETURA DE CORES E FONTES
+  --------------------------------
+  Define as cores e fontes principais da marca, permitindo
+  mudanças fáceis em um só lugar.
+*/
+:root {
+    --color-brand-primary: #fde64b; /* Amarelo Principal */
+    --color-brand-accent: #E15230;  /* Laranja para Destaques */
+    --color-text-primary: #222222; /* Texto Escuro Principal */
+    --color-text-secondary: #555555;/* Texto Cinza Secundário */
+    --color-background-light: #FEFBF6; /* Fundo Creme Suave */
+    --color-brand-dark: #222222; /* Cor escura para botões e fundos */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
+}
+
+/* CLASSES DE UTILIDADE DA MARCA
+  --------------------------------
+  Classes reutilizáveis para aplicar cores da marca de forma consistente.
+*/
+.text-brand-accent { color: var(--color-brand-accent); }
+.bg-brand-primary { background-color: var(--color-brand-primary); }
+.bg-brand-dark { background-color: var(--color-brand-dark); }
+.text-color-primary { color: var(--color-text-primary); }
+.text-color-secondary { color: var(--color-text-secondary); }
+
+/* ANIMAÇÃO DE SCROLL
+  --------------------------------
+  Efeito de fade-in para elementos que aparecem ao rolar a página.
+*/
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* COMPONENTES DE DESIGN ESPECÍFICOS
+  --------------------------------
+  Estilos para elementos de design únicos do site.
+*/
+
+/* Blob de fundo da seção Hero */
+.hero-blob-bg {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="a"><path fill="currentColor" d="M813 677q-97 177-279 193.5T221.5 730Q99 589.5 110 391t189-224q111-25.5 277 24.5t224 238q87 147.5 13 247.5Z"/></clipPath></defs><g clip-path="url(%23a)"><path fill="%23fde64b" d="M813 677q-97 177-279 193.5T221.5 730Q99 589.5 110 391t189-224q111-25.5 277 24.5t224 238q87 147.5 13 247.5Z"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Divisor de onda do rodapé */
+.footer-wave-divider {
+    position: relative;
+    background: var(--color-brand-primary);
+}
+.footer-wave-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -99px;
+    width: 100%;
+    height: 100px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 56.8166C312.483 -16.5333 469.32 -17.5 720 56.8166C970.68 131.133 1127.52 131.133 1440 56.8166V100H0V56.8166Z" fill="%23fde64b"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* ESTILOS DE COMPONENTES
+  --------------------------------
+  Estilos aplicados a componentes reutilizáveis como cards.
+*/
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 1rem; /* 16px */
+    padding: 1.5rem; /* 24px */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card-image {
+    width: 10rem; /* 160px */
+    height: 10rem; /* 160px */
+    object-fit: cover;
+    border-radius: 9999px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5rem; /* -80px para o efeito flutuante */
+    border: 8px solid #ffffff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 1.5rem; /* 24px */
+    border-radius: 1rem; /* 16px */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease-in-out;
+}

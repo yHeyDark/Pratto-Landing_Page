@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratto - O Sabor que Chega até Você</title>
+    <meta name="description" content="Cansado de cozinhar? Receba pratos deliciosos, com sabor de comida caseira e ingredientes frescos, no conforto da sua casa. Peça agora!">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (para ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Seu CSS customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="page-header" class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 transition-shadow duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navegação principal">
+            <a href="#home" class="font-extrabold text-2xl text-color-primary">Pratto</a>
+            
+            <div class="hidden md:flex items-center space-x-8" role="menubar">
+                <a href="#home" role="menuitem" class="text-color-secondary hover:text-color-primary font-semibold">Início</a>
+                <a href="#cardapio" role="menuitem" class="text-color-secondary hover:text-color-primary font-semibold">Cardápio</a>
+                <a href="#depoimentos" role="menuitem" class="text-color-secondary hover:text-color-primary font-semibold">Avaliações</a>
+            </div>
+
+            <a href="https://wa.me/5513997353377" target="_blank" class="hidden md:block bg-brand-primary text-color-primary font-bold py-2 px-6 rounded-full transition-transform active:scale-95">
+                Peça Agora
+            </a>
+
+            <button id="mobile-menu-button" class="md:hidden text-2xl" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <nav id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md">
+            <a href="#home" class="block text-center py-3 px-6 text-color-secondary hover:bg-gray-100 font-semibold">Início</a>
+            <a href="#cardapio" class="block text-center py-3 px-6 text-color-secondary hover:bg-gray-100 font-semibold">Cardápio</a>
+            <a href="#depoimentos" class="block text-center py-3 px-6 text-color-secondary hover:bg-gray-100 font-semibold">Avaliações</a>
+            <div class="p-4">
+                <a href="https://wa.me/5513997353377" target="_blank" class="block w-full text-center bg-brand-primary text-color-primary font-bold py-3 px-6 rounded-full active:scale-95 transition-transform">
+                    Peça Agora
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="hero-title" class="container mx-auto px-6 pt-32 pb-16 flex flex-col md:flex-row items-center gap-12">
+            <header class="w-full md:w-1/2 text-center md:text-left fade-in-on-scroll">
+                <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-color-primary leading-tight">
+                    A vida é corrida, sua refeição não precisa ser <span class="text-brand-accent">complicada</span>.
+                </h1>
+                <p class="mt-6 text-color-secondary text-lg">
+                    Chega de panelas e louça para lavar! Nós levamos até você o sabor da comida feita com carinho, ingredientes frescos e a praticidade que o seu dia a dia pede.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#cardapio" class="bg-brand-dark text-white font-bold py-3 px-8 rounded-lg transition-colors active:bg-gray-700">
+                        Conhecer o cardápio
+                    </a>
+                    <a href="https://wa.me/5513997353377" target="_blank" class="bg-green-500 text-white font-bold py-3 px-8 rounded-lg transition-colors active:bg-green-600 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i>Chamar no WhatsApp
+                    </a>
+                </div>
+            </header>
+
+            <figure class="w-full md:w-1/2 h-96 relative flex items-center justify-center fade-in-on-scroll" role="group" aria-label="Mosaico de pratos deliciosos">
+                <div class="hero-blob-bg w-full h-full absolute top-0 left-0 opacity-70"></div>
+                <img src="images/prato-principal.png" alt="Prato principal de frango assado com legumes frescos e batatas." class="w-56 h-56 md:w-72 md:h-72 object-cover rounded-full shadow-2xl z-20">
+                <img src="images/prato-fritura.png" alt="Porção de batatas fritas crocantes." class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg absolute top-4 left-4 md:left-10 z-10">
+                <img src="images/prato-salada.png" alt="Salada colorida com mix de folhas e nozes." class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full shadow-lg absolute bottom-4 right-4 md:right-10 z-10">
+            </figure>
+        </section>
+
+        <section id="cardapio" aria-labelledby="cardapio-title" class="py-20">
+            <div class="container mx-auto px-6">
+                <header class="text-center mb-16 fade-in-on-scroll">
+                    <h2 id="cardapio-title" class="text-4xl font-extrabold text-color-primary">Um cardápio para cada fome</h2>
+                    <p class="text-lg text-color-secondary mt-2">Nossos pratos mais amados, prontos para te surpreender.</p>
+                </header>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 md:gap-x-8">
+                    <!-- CARD 1: Altura do parágrafo removida -->
+                    <article class="menu-card fade-in-on-scroll">
+                        <img src="images/prato-salada.png" alt="Uma tigela de salada fresca e crocante." class="menu-card-image">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold mt-4">Salada Equilíbrio</h3>
+                            <p class="text-color-secondary mt-2 text-sm">
+                               Leve e poderosa. Uma combinação de folhas nobres, tomatinhos e um molho cítrico que renova as energias.
+                            </p>
+                        </div>
+                        <footer class="mt-4 flex justify-between items-center">
+                            <span class="font-bold text-xl text-color-primary">R$35,00</span>
+                            <div class="text-yellow-400 flex items-center gap-1" aria-label="Avaliação 4.5 de 5 estrelas">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                                <span class="text-color-secondary text-sm ml-1">(127)</span>
+                            </div>
+                        </footer>
+                    </article>
+                    
+                    <!-- CARD 2: Altura do parágrafo removida -->
+                    <article class="menu-card fade-in-on-scroll" style="transition-delay: 150ms;">
+                        <img src="images/prato-fritura.png" alt="Um cone com batatas fritas douradas." class="menu-card-image">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold mt-4">Fritas da Alegria</h3>
+                            <p class="text-color-secondary mt-2 text-sm">
+                                Aquele clássico que abraça a alma. Crocantes por fora, macias por dentro, e impossível de comer uma só.
+                            </p>
+                        </div>
+                        <footer class="mt-4 flex justify-between items-center">
+                            <span class="font-bold text-xl text-color-primary">R$35,00</span>
+                            <div class="text-yellow-400 flex items-center gap-1" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="text-color-secondary text-sm ml-1">(98)</span>
+                            </div>
+                        </footer>
+                    </article>
+                    
+                    <!-- CARD 3: Altura do parágrafo removida -->
+                    <article class="menu-card fade-in-on-scroll" style="transition-delay: 300ms;">
+                        <img src="images/prato-principal.png" alt="Um prato com frango grelhado e arroz." class="menu-card-image">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold mt-4">Frango Supremo</h3>
+                            <p class="text-color-secondary mt-2 text-sm">
+                               O prato que resolve o seu almoço. Filé de frango suculento no ponto certo, com acompanhamentos que completam.
+                            </p>
+                        </div>
+                        <footer class="mt-4 flex justify-between items-center">
+                            <span class="font-bold text-xl text-color-primary">R$35,00</span>
+                            <div class="text-yellow-400 flex items-center gap-1" aria-label="Avaliação 4.5 de 5 estrelas">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                                <span class="text-color-secondary text-sm ml-1">(154)</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" aria-labelledby="depoimentos-title" class="py-20 overflow-hidden">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <figure class="w-full md:w-1/3 relative fade-in-on-scroll">
+                    <div class="bg-brand-primary w-72 h-72 rounded-full absolute -bottom-8 -left-8 -z-10"></div>
+                    <img src="images/chef.png" alt="Chef de cozinha sorrindo, orgulhoso de seus pratos." class="rounded-2xl shadow-lg z-10 w-full h-auto object-cover" style="max-height: 500px;">
+                </figure>
+
+                <div class="w-full md:w-2/3 fade-in-on-scroll">
+                    <header class="mb-8">
+                        <h2 id="depoimentos-title" class="text-4xl font-extrabold text-color-primary">Quem prova, não troca</h2>
+                        <p class="text-lg text-color-secondary mt-2">A felicidade de quem já se livrou do fogão.</p>
+                    </header>
+
+                    <div class="space-y-6">
+                        <blockquote class="testimonial-card">
+                            <div class="flex items-start gap-4">
+                                <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Foto de perfil de Maria Clara" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <p class="text-color-secondary italic">"Sério, salvou minha semana! A comida chegou quentinha e com um tempero que lembrou a da minha avó. Virei fã!"</p>
+                                    <cite class="text-sm font-bold text-color-primary mt-2 not-italic">- Maria Clara</cite>
+                                </div>
+                            </div>
+                        </blockquote>
+                         <blockquote class="testimonial-card" style="transition-delay: 150ms;">
+                             <div class="flex items-start gap-4">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Foto de perfil de João Silva" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <p class="text-color-secondary italic">"Finalmente um delivery que a salada não chega toda 'murcha'. Ingredientes frescos e entrega super rápida. Recomendo demais!"</p>
+                                    <cite class="text-sm font-bold text-color-primary mt-2 not-italic">- João Silva</cite>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-wave-divider"></div>
+    <footer class="bg-brand-primary text-color-primary py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold">Que tal experimentar?</h2>
+            <p class="mt-2 max-w-xl mx-auto">Peça agora e descubra por que nossos clientes nos amam. Sua próxima refeição favorita está a um clique de distância.</p>
+            <a href="https://wa.me/5513997353377" target="_blank" class="mt-6 inline-block bg-brand-dark text-white font-bold py-3 px-8 rounded-full transition-all duration-300 active:scale-95">
+                Fazer meu pedido
+            </a>
+            <div class="mt-8 text-sm">
+                <p>&copy; 2024 Pratto. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Seu JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
